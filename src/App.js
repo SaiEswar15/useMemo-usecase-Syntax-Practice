@@ -1,6 +1,6 @@
 import "./styles.css";
 import { useState, useMemo } from "react";
-
+import Additional from "./additional";
 export default function App() {
   const [count, setCount] = useState(0);
   const [num, setnum] = useState(0);
@@ -34,6 +34,7 @@ export default function App() {
       <h1>factorial : {factorial}</h1>
       <button onClick={handler}>increment</button>
       <button onClick={numberHandler}>number change</button>
+      <Additional></Additional>
     </div>
   );
 }
